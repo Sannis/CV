@@ -5,7 +5,7 @@
 %=======
 
 % see https://gb.mirrors.cicku.me/ctan/macros/latex/contrib/moderncv/manual/moderncv_userguide.pdf
-\moderncvstyle{casual}
+\moderncvstyle{classic}
 \moderncvcolor{grey}
 
 % character encoding
@@ -15,7 +15,7 @@
 \usepackage[english,russian]{babel}
 
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.8]{geometry}
 
 % if you want to change the width of the column with the dates
 \setlength{\hintscolumnwidth}{7em}
@@ -26,30 +26,22 @@
 %==============
 \name{Oleg}{Efimov}
 %\title{Resumé title (optional)}
-\born{25/10/1988}
 \phone[mobile]{+44-7435-348-567}
 \email{efimovov@gmail.com}
-\address{London}{UK}
+\address{London, UK}
 \social[linkedin]{oefimov}
 \social[github]{Sannis}
 % END{personal data}
 
-%\nopagenumbers{}
+\nopagenumbers{}
 
 %========
 % Content
 %========
 
 \begin{document}
+
 \maketitle
-
-\hypersetup{
-    pdftitle={Олег Ефимов "--- curriculum vit\ae{}}
-}
-
-\section{Образование}
-\cventry{2005--2011}{МГУ им.~М.В.~Ломоносова, физический факультет}{Москва}{специалист}{средний бал 4.5}{Кафедра общей физики и волновых процессов.}
-
 
 \section{Опыт работы}
 
@@ -82,25 +74,12 @@
   \end{itemize}
 }
 
+\section{Образование}
+\cventry{2005--2011}{МГУ им.~М.В.~Ломоносова, физический факультет}{Москва}{специалист}{средний бал 4.5}{Кафедра общей физики и волновых процессов.}
 
 \section{Языки}
 \cvlanguage{Русский}{Родной}{}
 \cvlanguage{Английский}{Технический}{Относительно свободное чтение технической литературы в~области физики, математикик и компьютерной техники.
                                       При общении c авторами проектов, в~которых я участвовал на Github, также проблем с пониманием не возникало.}
-
-
-\section{Компьютерные навыки}
-\cvline{ОС, администрирование}{Постоянно работаю в GNU/Linux (openSUSE 11.x) с 2009 г.,
-                               есть опыт развёртывания, настройки и обслуживания вычислительного кластера на основе Rocks (CentOS 5.x).
-                               Имею опыт написания Makefile-ов и спецификаций для RPM-пакетов.
-                               Имею опыт настройки Apache, Nginx, MySQL и Bind.
-                               Администрировал кластеры из 8-20 рмашин с различными ролями.}
-\cvline{Языки программирования}{Пишу на C с 2004 г., на PHP с 2007 г. Хорошо знаю внутреннее устройство Node.js.
-                                Имею представление и небольшой опыт работы с C++ и JavaScript. Эпизодически использовал Delphi и C\#. Знаю SQL, включая оптимизацию запросов.}
-\cvline{Web-сайты}{Долгое время занимался разработкой компонентов и модификаций для форумов IP.Board версий 1.3 и 2.1--2.3. Написал около 30 модификаций и несколько больших компонентов.
-                    Есть опыт использования JavaScript для AJAX и написания бекенда к нему.
-                    Валидная вёрстка с использованием HTML/XHTML не представляет сложностей, однако вопросы кроссбраузерности обычно черпаю из сети.}
-\cvline{Остальное}{Использую Git в повседневной работе, не пугаюсь merge и rebase. Имею представление о~unit-тестировании и опыт написания тестов к своим библиотекам. Работал с SVN, Redmine, Nagios, Munin.}
-
 
 \end{document}
