@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[10pt,a4paper]{moderncv}
 
 %=======
 % Styles
@@ -11,21 +11,21 @@
 % character encoding
 \usepackage{cmap}
 \usepackage[utf8]{inputenc}
-\usepackage[T2A]{fontenc}
-\usepackage[english,russian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.85]{geometry}
 
 % if you want to change the width of the column with the dates
-\setlength{\hintscolumnwidth}{7em}
+\setlength{\hintscolumnwidth}{6em}
 \recomputelengths
 
 %==============
 % Personal data
 %==============
 \name{Oleg}{Efimov}
-%\title{Resumé title (optional)}
+\title{Platform Engineer}
 \phone[mobile]{+44-7435-348-567}
 \email{efimovov@gmail.com}
 \address{London, UK}
@@ -43,43 +43,72 @@
 
 \maketitle
 
-\section{Опыт работы}
+\section{Experience}
 
-\cventry{03/2011--03/2012}{PHP разработчик / администратор}{PHP/MySQL/Javascrip}{Wikimapia.org}{}{Anykey программирование на PHP.\newline{}%
-  Основные занятия:%
+\cventry{Jan 2019 -- Present}{Principal Engineer, Backend Platform}{Bumble}{London, UK}{}{
   \begin{itemize}%
-    \item Разработка различных компонентов для сайта
-    \item Администрирование тестового сервера
-    \item Мониторинг работы продакшн-серверов, оперативное реагирование и консультации по решению проблем
-  \end{itemize}
-  Отдельно стоит выделить систему ситигидов на основе данных сайта.
-}
-
-\cventry{10/2007--05/2008}{Программист}{МГУ}{Москва}{}{Сотрудничал с лабораторией адаптивной оптики в лице Н.Г.~Ирошникова.\newline{}%
-  Результаты работы:%
-  \begin{itemize}%
-    \item Написан набор библиотек для обработки изображений:
-      \begin{itemize}%
-        \item поиск опорных точек по максимуму энтропии Шеннона в скользящем окне
-        \item совмещение нескольких изображений в одно по известным опорным точкам
-      \end{itemize}
-    \item Написано GUI-приложение для этих библиотек, позволяющий восстанавливать цветное изображение по раздельно снятым цветным каналам
+    \item Oversaw architectural leadership across media infrastructure, user authentication data storage,\newline{}
+          GDPR compliance, and data sovereignty initiatives.
+    \item Led the backend and infrastructure effort for ramping up two additional on-premises data centers\newline{}
+          and expanding into Google Cloud.
+    \item Drove improvements in observability, including standardization of metrics collection and alerting practices across services in the platform and beyond.
+    \item Participated in incident triage and response, helping enhance system reliability and postmortem processes.
+    \item Mentored engineers across the Backend Platform (about 20 people) and other cross-functional teams, contributing to career growth and engineering quality.
   \end{itemize}
 }
 
-\cventry{03/2010--$\infty$}{Разработчик}{C++/JavaScript/Google V8}{оpen-source разработки}{}{Разработка приложений и модулей для Node.js.\newline{}%
-  Проекты:%
+\cventry{Jan 2017 -- Dec 2018}{Staff Engineer, Backend Platform}{Badoo}{Moscow, Russia}{}{
   \begin{itemize}%
-    \item Разработка асинхронного модуля для обращения к MySQL
+    \item Joined the Backend Platform team and assumed ownership of the user-generated media infrastructure.
+    \item Introduced observability for edge and storage services, enabling detailed latency and throughput analysis.
+    \item Refactored storage services to support horizontal scaling and reduce memory usage significantly.
+    \item Migrated edge infrastructure from proprietary F5 LTM hardware to an internal solution\newline{}
+          based on IPVS and Nginx.
+    \item Managed a team of four, fostering collaboration and innovation within Backend Platform.
   \end{itemize}
 }
 
-\section{Образование}
-\cventry{2005--2011}{МГУ им.~М.В.~Ломоносова, физический факультет}{Москва}{специалист}{средний бал 4.5}{Кафедра общей физики и волновых процессов.}
+\cventry{Jan 2014 -- Dec 2016}{Lead Engineer, Apps Backend}{Badoo}{Moscow, Russia}{}{
+  \begin{itemize}%
+    \item Led the integration of advanced filtering and privacy models, improving user experience and safety.
+    \item Improved fairness and accuracy of geo-based voting and matching algorithms across global markets.
+    \item Developed a WiFi-based user acquisition platform used in partnership-driven marketing campaigns.
+    \item Established consistent performance tracking across the product backend, driving operational efficiency.
+  \end{itemize}
+}
 
-\section{Языки}
-\cvlanguage{Русский}{Родной}{}
-\cvlanguage{Английский}{Технический}{Относительно свободное чтение технической литературы в~области физики, математикик и компьютерной техники.
-                                      При общении c авторами проектов, в~которых я участвовал на Github, также проблем с пониманием не возникало.}
+\cventry{Jul 2012 -- Dec 2013}{Senior Engineer, Apps Backend}{Badoo}{Moscow, Russia}{}{
+  \begin{itemize}%
+    \item Contributed to core features of the matching engine, helping boost user engagement and retention.
+    \item Played a key role in launching FriendPath and HotOrNot, significantly expanding the platform’s social\newline{}
+          and viral capabilities.
+    \item Improved friends network processing performance 10x by integrating the Judy array library,\newline{}
+          reducing memory footprint and speeding up graph operations.
+  \end{itemize}
+}
+
+\cventry{Apr 2012 -- Jun 2012}{PHP Developer}{Mail.ru Group}{Moscow, Russia}{}{
+  \begin{itemize}%
+    \item Contributed to the successful migration of ICQ’s codebase and infrastructure from Israel and the US\newline{}
+          to Russia after the company's acquisition.
+    \item Collaborated closely with Site Reliability Engineers on infrastructure setup and deployment coordination.
+    \item Managed the planning and execution of data and codebase transfers within a tight one-month timeline.
+  \end{itemize}
+}
+
+\cventry{Feb 2011 -- Mar 2012}{PHP Developer}{Wikimapia}{Moscow, Russia}{}{
+  \begin{itemize}%
+    \item Collaborated as one of three backend engineers at Wikimapia, a geographical encyclopedia startup.
+    \item Developed region- and city-level portals, enhancing user engagement and accessibility.
+    \item Introduced a comprehensive monitoring for 18 production servers, improving system reliability.
+  \end{itemize}
+}
+
+\section{Education}
+\cventry{Sep 2005 -- Jan 2011}{Specialist}{M. V. Lomonosov Moscow State University}{Moscow}{}{}
+
+\section{Languages}
+\cvlanguage{Russian}{Native}{}
+\cvlanguage{English}{Fluent}{}
 
 \end{document}
