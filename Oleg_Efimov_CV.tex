@@ -10,9 +10,6 @@
 \usepackage[T2A]{fontenc}
 \usepackage[english,russian]{babel}
 
-% nice cites
-\usepackage{cite}
-
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
 % if you want to change the width of the column with the dates
@@ -27,17 +24,7 @@
 \email{efimovov@gmail.com}
 \address{London}{UK}
 \social[linkedin]{oefimov}
-%\photo[130pt]{photo}
 % END{personal data}
-
-% to show numerical labels in the bibliography; only useful if you make citations in your resume
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 
 %\nopagenumbers{}
 
@@ -53,33 +40,22 @@
 }
 
 \section{Образование}
-\cventry{2005--2011}{МГУ им.~М.В.~Ломоносова, физический факультет}{Москва}{специалист}{средний бал 4.5}{Кафедра общей физики и волновых процессов \cite{MSUOfvp}.}
+\cventry{2005--2011}{МГУ им.~М.В.~Ломоносова, физический факультет}{Москва}{специалист}{средний бал 4.5}{Кафедра общей физики и волновых процессов.}
 
 
 \section{Опыт работы}
 
-\cventry{03/2011--03/2012}{PHP разработчик / администратор}{PHP/MySQL/Javascrip}{Wikimapia.org \cite{WikimapiaOrg}}{}{Anykey программирование на PHP.\newline{}%
+\cventry{03/2011--03/2012}{PHP разработчик / администратор}{PHP/MySQL/Javascrip}{Wikimapia.org}{}{Anykey программирование на PHP.\newline{}%
   Основные занятия:%
   \begin{itemize}%
     \item Разработка различных компонентов для сайта
     \item Администрирование тестового сервера
     \item Мониторинг работы продакшн-серверов, оперативное реагирование и консультации по решению проблем
   \end{itemize}
-  Отдельно стоит выделить систему ситигидов на основе данных сайта \cite{WikimapiaOrgCityguides}.
+  Отдельно стоит выделить систему ситигидов на основе данных сайта.
 }
 
-\cventry{02/2007--10/2010}{Веб-разработчик}{PHP/JavaScript/AJAX}{фриланс}{}{Занимался разработкой модификаций и компонентов для форумов IPB.\newline{}%
-  Основные занятия:%
-  \begin{itemize}%
-    \item Разработка компонентов для Invision Power Board (IP.Board)
-    \item Установка модификаций любой сложности
-    \item Консультирование по вопросам модифицирования и оптимизации работы форума
-  \end{itemize}
-  Отдельно стоит выделить первую в мире модификацию ответа с помощью AJAX для~IPB 2.1--2.3, впоследствии реализованную и для IPB 1.3.
-  Полный список модификаций можно найти \newline{} на сайтах \cite{IPBSannisRu, IPBSannisIBR} или просмотреть часть из них онлайн на Github \cite{IPBSannisGithub}.
-}
-
-\cventry{10/2007--05/2008}{Программист}{МГУ}{Москва}{}{Сотрудничал с лабораторией адаптивной оптики \cite{MSUAdaptiveOptics, MSUMedPhys} в лице Н.Г.~Ирошникова.\newline{}%
+\cventry{10/2007--05/2008}{Программист}{МГУ}{Москва}{}{Сотрудничал с лабораторией адаптивной оптики в лице Н.Г.~Ирошникова.\newline{}%
   Результаты работы:%
   \begin{itemize}%
     \item Написан набор библиотек для обработки изображений:
@@ -91,22 +67,10 @@
   \end{itemize}
 }
 
-\cventry{02/2009--05/2009}{Преподаватель компьютерного практикума}{МГУ}{Москва}{}{Работал на кафедре общей физики и волновых процессов \cite{MSUOfvp}.\newline{}%
-  Обязанности:%
-  \begin{itemize}%
-    \item Проведения практикума по параллельному програмимрованию для студентов 3 курса
-    \item Ознакомление студентов с работой в ОС GNU/Linux
-    \item Обучение применения технологий OpenMP/MPI для написания параллельных приложений
-  \end{itemize}
-  С программой курса можно ознакомиться на сайте \cite{MSUKtg1Prac}.
-}
-
-\cventry{03/2010--$\infty$}{Разработчик}{C++/JavaScript/Google V8}{оpen-source разработки}{}{Разработка приложений и модулей для Node.js \cite{NodeJS}.\newline{}%
+\cventry{03/2010--$\infty$}{Разработчик}{C++/JavaScript/Google V8}{оpen-source разработки}{}{Разработка приложений и модулей для Node.js.\newline{}%
   Проекты:%
   \begin{itemize}%
-    \item Разработка асинхронного модуля для обращения к MySQL \cite{GithubNodeMySQL}
-    \item Различный вклад в проекты Nodeunit \cite{GithubNodeunit}, Nodelint \cite{GithubNodelint} и Dox \cite{GithubSannisDox}
-    \item Участие в переводе на русский язык документации по Node.js \cite{GithubNodejsDocsRu}
+    \item Разработка асинхронного модуля для обращения к MySQL
   \end{itemize}
 }
 
@@ -131,77 +95,4 @@
 \cvline{Остальное}{Использую Git в повседневной работе, не пугаюсь merge и rebase. Имею представление о~unit-тестировании и опыт написания тестов к своим библиотекам. Работал с SVN, Redmine, Nagios, Munin.}
 
 
-\section{Диплом специалиста}
-\cvline{название}{Самофокусировка лазерных импульсов с регулярной поперечной структурой\newline{}
-                   и~сравнительный анализ филаментации на длинах волн 0.8~и~10~мкм в воздухе.}
-\cvline{руководитель}{к.\,ф.-м.\,н., доцент С.А.~Шлёнов.}
-\cvline{квалификация}{Физик по специальности <<физика>>.}
-\cvline{}{\small Дипломная работа состояла в численном исследовании процесса самофокусировки лазеного излучения в воздухе,
-                   с применением неравномерных разностных сеток и распределённых вычислений для уменьшения времени расчётов.
-                   Материалы дипломной работы доступены на Github \cite{DiplomaOnGithub}.}
-
-
-\section{Хобби}
-\cvline{Спортивный туризм}{\small Занимаюсь пешим, горным и немного водным и вело туризмом. 2ПР, 2ВУ. А также городское ориентирование.}
-\cvline{Фотография}{\small \url{http://500px.com/Sannis}, \url{http://sannis.livejournal.com}.}
-\cvline{}{\small }
-
-
-\renewcommand\refname{Ссылки}
-\bibliographystyle{plain}
-\begin{thebibliography}{99}
-  \bibitem{MSUOfvp}
-    Кафедра общей физики и волновых процессов физического факультета МГУ.\\
-    \url{http://ofvp.phys.msu.ru}.
-  \bibitem{DiplomaOnGithub}
-    Дипломная работа.\\
-    \url{https://github.com/Sannis/msu_phys_ofvp_diploma}.
-    2010.
-  \bibitem{IPBSannisRu}
-    Список наболее популярных модификаций для IPB.\\
-    \url{http://ipb.sannis.ru}.
-  \bibitem{IPBSannisIBR}
-    Список модификаций для IPB на сайте АйБиРесурс.\\
-    \url{http://forums.ibresource.ru/index.php?app=core&module=search&do=user_activity&search_app=downloads&mid=36662}.
-  \bibitem{IPBSannisGithub}
-    Репозиторий с частью open-source модификаций для IPB.\\
-    \url{https://github.com/Sannis/ipb_modifications}.
-  \bibitem{MSUAdaptiveOptics}
-    Лаборатория адаптивной оптики кафедры ОФиВП физического факультета МГУ.\\
-    \url{http://optics.ru}.
-  \bibitem{MSUMedPhys}
-    Кафедра медицинской физики физического факультета МГУ.\\
-    \url{http://medphys.phys.msu.ru}.
-  \bibitem{MSUKtg1Prac}
-    Практикум <<Параллельное программирование>>.\\
-    \url{http://ktg1.phys.msu.ru/?edu_3ofvp}.
-  \bibitem{NodeJS}
-    Сайт Node.js.\\
-    \url{http://nodejs.org}.
-  \bibitem{GithubNodeMySQL}
-    Асинхронный модуль для обращения к MySQL из Node.js.\\
-    \url{https://github.com/Sannis/node-mysql-libmysqlclient}.
-  \bibitem{GithubNodeunit}
-    Утилита для unit-тестирования Node.js приложений.\\
-    \url{https://github.com/caolan/nodeunit}.
-  \bibitem{GithubNodelint}
-    Утилита для проверки соответсвия кода правилам JSLint.\\
-    \url{https://github.com/tav/nodelint}.
-  \bibitem{GithubSannisDox}
-    Генератор документации на основе JSDoc.\\
-    \url{https://github.com/Sannis/Dox}.
-  \bibitem{GithubNodejsDocsRu}
-    Русская версия документации по Node.js.\\
-    \url{https://github.com/kurokikaze/nodejs-docs-rus}.
-  \bibitem{WikimapiaOrg}
-    Сайт Wikimapia.org.\\
-    \url{http://wikimapia.org}.
-  \bibitem{WikimapiaOrgCityguides}
-    Ситигид Москвы.\\
-    \url{http://moscow.wikimapia.org}.
-\end{thebibliography}
-
 \end{document}
-
-
-%% end of file `template_en.tex'.
