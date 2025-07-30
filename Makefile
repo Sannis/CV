@@ -11,7 +11,7 @@ all: cv
 cv: Oleg_Efimov_CV.pdf
 	rm -f $(CLEAN_LOGS)
 
-Oleg_Efimov_CV.pdf: Oleg_Efimov_CV.tex moderncvthemesannis.sty
+Oleg_Efimov_CV.pdf: Oleg_Efimov_CV.tex
 	$(PDFLATEX) $(PDFLATEXFLAGS) Oleg_Efimov_CV
 	$(PDFLATEX) $(PDFLATEXFLAGS) Oleg_Efimov_CV
 

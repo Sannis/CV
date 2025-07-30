@@ -1,8 +1,8 @@
 \documentclass[11pt,a4paper]{moderncv}
 
-% moderncv themes
-% optional argument are 'blue' (default), 'orange', 'red', 'green' and 'grey'
-\moderncvtheme[grey]{sannis}
+% see https://gb.mirrors.cicku.me/ctan/macros/latex/contrib/moderncv/manual/moderncv_userguide.pdf
+\moderncvstyle{casual}
+\moderncvcolor{grey}
 
 % character encoding
 \usepackage{cmap}
@@ -19,33 +19,16 @@
 \setlength{\hintscolumnwidth}{7em}
 \recomputelengths
 
-% personal data
-\firstname{Олег}
-\familyname{Ефимов}
-
-% START{optional}
+% START{personal data}
+\name{Олег}{Ефимов}
 %\title{Resumé title (optional)}
-\address{ЮЗАО}{Россия, Москва}
-\mobile{8-(910)-449-75-89}
-%\phone{phone (optional)}
-%\fax{fax (optional)}
-\email{efimovov@yandex.ru}
-\homepage{sannis.ru}
-\extrainfo{Дата рождения: 25/10/1988}
-\photo[130pt]{photo}
-%\quote{<<Цинично и честно>>}
-% END{optional}
-
-\makeatletter
-\newcommand*{\jabber}[1]{\def\@jabber{#1}}
-\newcommand*{\twitter}[1]{\def\@twitter{#1}}
-\newcommand*{\habrahabr}[1]{\def\@habrahabr{#1}}
-\newcommand*{\vkontakte}[1]{\def\@vkontakte{#1}}
-\makeatother
-\jabber{efimovov@gmail.com}
-\twitter{SannisDev}
-\habrahabr{Sannis}
-\vkontakte{Sannis}
+%\born{25/10/1988}
+\phone[mobile]{+7-(910)-449-75-89}
+\email{efimovov@gmail.com}
+\address{London}{UK}
+\social[linkedin]{oefimov}
+%\photo[130pt]{photo}
+% END{personal data}
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 \makeatletter
